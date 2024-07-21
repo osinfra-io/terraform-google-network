@@ -6,7 +6,7 @@ variable "name" {
 
 variable "project" {
   description = "The ID of the project in which the resource belongs"
-  type = string
+  type        = string
 }
 
 variable "rules" {

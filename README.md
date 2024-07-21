@@ -88,7 +88,7 @@ terraform test
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | name | Name of the network to create | `string` | `"osinfra-vpc"` | no |
-| project | The ID of the project in which the resource belongs | `any` | n/a | yes |
+| project | The ID of the project in which the resource belongs | `string` | n/a | yes |
 | rules | List of firewall rule definitions | ```list(object({ allow = optional(list(object({ ports = list(string) protocol = string })), []) deny = optional(list(object({ ports = list(string) protocol = string })), []) description = optional(string) direction = string log_config_enabled = optional(bool, true) log_config_metadata = optional(string, "INCLUDE_ALL_METADATA") name = string priority = optional(number) ranges = optional(list(string)) source_tags = optional(list(string)) target_tags = optional(list(string)) }))``` | `[]` | no |
 | shared\_vpc | Enable VPC sharing | `bool` | `false` | no |
 | shared\_vpc\_service\_projects | The set of service projects to attach to the shared VPC | `set(string)` | `[]` | no |
