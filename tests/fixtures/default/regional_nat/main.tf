@@ -1,19 +1,24 @@
-module "test" {
-  source = "../../../../regional/nat"
+# Required Providers
+# https://developer.hashicorp.com/terraform/language/providers/requirements
 
-  # Cloud NAT (network address translation) lets certain resources without external IP addresses create outbound connections to the internet.
-  # https://cloud.google.com/nat/docs/overview
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+    }
+  }
+}
+
+module "all_subnets_test" {
+  source = "../../../../regional/nat"
 
   network = "terraform-test-vpc"
   project = var.project
   region  = "us-east1"
 }
 
-module "test1" {
+module "list_of_subnets_test" {
   source = "../../../../regional/nat"
-
-  # Cloud NAT (network address translation) lets certain resources without external IP addresses create outbound connections to the internet.
-  # https://cloud.google.com/nat/docs/overview
 
   network                            = "terraform-test-vpc"
   prefix                             = "terraform-test-vpc-subnetworks"
