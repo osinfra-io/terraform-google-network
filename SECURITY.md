@@ -7,4 +7,4 @@ the community, but it does come with some risks.
 ## Reporting a Vulnerability
 
 Privately discuss, fix, and publish information about security vulnerabilities in this repository by drafting a new
-[security advisory](https://github.com/osinfra-io/terraform-google-network/security/advisories/new).
+[security advisory](https://github.com/osinfra-io/terraform-google-vpc/security/advisories/new).
