@@ -33,7 +33,7 @@ No modules.
 | <a name="input_private_ip_google_access"></a> [private\_ip\_google\_access](#input\_private\_ip\_google\_access) | When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private Google Access | `bool` | `null` | no |
 | <a name="input_project"></a> [project](#input\_project) | The ID of the project in which the resource belongs | `string` | n/a | yes |
 | <a name="input_purpose"></a> [purpose](#input\_purpose) | The purpose of the resource. This field can be either `PRIVATE_RFC_1918`, `INTERNAL_HTTPS_LOAD_BALANCER` or `REGIONAL_MANAGED_PROXY` | `string` | `null` | no |
-| <a name="input_region"></a> [region](#input\_region) | The region for this subnetwork | `string` | n/a | yes |
+| <a name="input_region"></a> [region](#input\_region) | The region in which the resource belongs | `string` | n/a | yes |
 | <a name="input_role"></a> [role](#input\_role) | The role of subnetwork. The value can be set to `ACTIVE` or `BACKUP` | `string` | `null` | no |
 | <a name="input_secondary_ip_ranges"></a> [secondary\_ip\_ranges](#input\_secondary\_ip\_ranges) | An array of configurations for secondary IP ranges for VM instances contained in this subnetwork | <pre>list(object({<br>    ip_cidr_range = string<br>    range_name    = string<br>  }))</pre> | `[]` | no |
 

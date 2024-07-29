@@ -34,7 +34,7 @@ variable "purpose" {
 }
 
 variable "region" {
-  description = "The region for this subnetwork"
+  description = "The region in which the resource belongs"
   type        = string
 }
 
