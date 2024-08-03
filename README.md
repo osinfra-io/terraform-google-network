@@ -1,12 +1,12 @@
-# <img align="left" width="45" height="45" src="https://github.com/osinfra-io/terraform-google-vpc/assets/1610100/b99acbaf-aea0-4004-b3cf-641eafa137c4"> Google Cloud Platform - Network Module
+# <img align="left" width="45" height="45" src="https://github.com/osinfra-io/terraform-google-network/assets/1610100/b99acbaf-aea0-4004-b3cf-641eafa137c4"> Google Cloud Platform - Network Module
 
-**[GitHub Actions](https://github.com/osinfra-io/terraform-google-vpc/actions):**
+**[GitHub Actions](https://github.com/osinfra-io/terraform-google-network/actions):**
 
-[![Terraform Tests](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/test.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/test.yml) [![Dependabot](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/dependabot.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-vpc/actions/workflows/dependabot.yml)
+[![Terraform Tests](https://github.com/osinfra-io/terraform-google-network/actions/workflows/test.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-network/actions/workflows/test.yml) [![Dependabot](https://github.com/osinfra-io/terraform-google-network/actions/workflows/dependabot.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-network/actions/workflows/dependabot.yml)
 
 **[Infracost](https://www.infracost.io):**
 
-[![infracost](https://img.shields.io/endpoint?url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/19c599ec-c2ad-4031-8480-2110b02be0eb/branch/d36a38e2-44a6-4e64-a082-5f81bd3f9f61)](https://dashboard.infracost.io/org/osinfra-io/repos/19c599ec-c2ad-4031-8480-2110b02be0eb?tab=settings)
+[![infracost](https://img.shields.io/endpoint?url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/12f405c3-d54f-4d40-bc56-f77915992342/branch/033eda30-5251-4ab9-bc73-c1a963174a53)](https://dashboard.infracost.io/org/osinfra-io/repos/12f405c3-d54f-4d40-bc56-f77915992342?tab=settings)
 
 💵 Monthly estimates based on Infracost baseline costs.
 
