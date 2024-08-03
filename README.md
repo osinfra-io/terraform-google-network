@@ -1,4 +1,4 @@
-# <img align="left" width="45" height="45" src="https://github.com/osinfra-io/terraform-google-network/assets/1610100/b99acbaf-aea0-4004-b3cf-641eafa137c4"> Google Cloud Platform - Network Module
+# <img align="left" width="45" height="45" src="https://github.com/user-attachments/assets/b1a10251-0c34-41c9-ac8c-edd79dbfaf07"> Google Cloud Platform - Network Module
 
 **[GitHub Actions](https://github.com/osinfra-io/terraform-google-network/actions):**
 
