@@ -1,6 +1,3 @@
-# Required Providers
-# https://developer.hashicorp.com/terraform/language/providers/requirements
-
 terraform {
   required_providers {
     google = {
@@ -12,18 +9,18 @@ terraform {
 module "all_subnets_test" {
   source = "../../../../regional/nat"
 
-  network = "terraform-test-vpc"
+  network = "mock-vpc"
   project = var.project
-  region  = "us-east1"
+  region  = "mock-region"
 }
 
 module "list_of_subnets_test" {
   source = "../../../../regional/nat"
 
-  network                            = "terraform-test-vpc"
-  prefix                             = "terraform-test-vpc-subnetworks"
+  network                            = "mock-vpc"
+  prefix                             = "mock-vpc-subnetworks"
   project                            = var.project
-  region                             = "us-east1"
+  region                             = "mock-region"
   source_subnetwork_ip_ranges_to_nat = "LIST_OF_SUBNETWORKS"
-  subnetwork_names                   = ["fleet-member-us-east1"]
+  subnetwork_names                   = ["mock-subnetwork"]
 }

@@ -72,7 +72,7 @@ terraform test
 
 | Name | Version |
 |------|---------|
-| google | 5.38.0 |
+| google | 5.40.0 |
 
 ### Resources
 

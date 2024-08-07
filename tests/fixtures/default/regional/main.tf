@@ -1,6 +1,3 @@
-# Required Providers
-# https://developer.hashicorp.com/terraform/language/providers/requirements
-
 terraform {
   required_providers {
     google = {
@@ -13,15 +10,15 @@ module "test" {
   source = "../../../../regional"
 
   ip_cidr_range = "10.60.32.0/20"
-  name          = "terraform-test-subnet-us-east1"
-  network       = "terraform-test-vpc"
+  name          = "mock-subnet-us-east1"
+  network       = "mock-vpc"
 
   # When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and
   # services by using Private Google Access. This is required for private Kubernetes clusters.
 
   private_ip_google_access = true
   project                  = var.project
-  region                   = "us-east1"
+  region                   = "mock-region"
 
   # Secondary ranges are used to allocate IP addresses to resources in a subnetwork. In this example we create Pod IP address ranges
   # and Service (ClusterIP) address ranges for a VPC-native cluster.
@@ -30,11 +27,11 @@ module "test" {
 
   secondary_ip_ranges = [
     {
-      range_name    = "k8s-services-us-east1"
+      range_name    = "mock-secondary-services"
       ip_cidr_range = "10.61.16.0/20"
     },
     {
-      range_name    = "k8s-pods-us-east1"
+      range_name    = "mock-secondary-pods"
       ip_cidr_range = "10.8.0.0/14"
     }
   ]
