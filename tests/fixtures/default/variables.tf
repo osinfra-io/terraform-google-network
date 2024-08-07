@@ -1,3 +1,7 @@
+variable "environment" {
+  type = string
+}
+
 variable "project" {
-  description = "The ID of the project in which the resource belongs"
+  type = string
 }

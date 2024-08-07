@@ -1,6 +1,3 @@
-# Required Providers
-# https://developer.hashicorp.com/terraform/language/providers/requirements
-
 terraform {
   required_providers {
     google = {
@@ -12,16 +9,9 @@ terraform {
 module "public_test" {
   source = "../../../../dns"
 
-  dns_name = "gcp.osinfra.io."
-
-  labels = {
-    cost-center = "x000"
-    env         = "sb"
-    repository  = "terraform-google-cloud-dns"
-    team        = "testing"
-  }
-
-  name       = "gcp-osinfra-io"
+  dns_name   = "mock-subdomain.mock-domain.io."
+  labels     = local.labels
+  name       = "mock-subdomain-mock-domain"
   project    = var.project
   visibility = "public"
 }
@@ -29,17 +19,10 @@ module "public_test" {
 module "private_test" {
   source = "../../../../dns"
 
-  dns_name = "gcp-priv.osinfra.io."
-
-  labels = {
-    cost-center = "x000"
-    env         = "sb"
-    repository  = "terraform-google-cloud-dns"
-    team        = "testing"
-  }
-
-  name                               = "gcp-priv-osinfra-io"
-  private_visibility_config_networks = ["https://www.googleapis.com/compute/v1/projects/${var.project}/global/networks/terraform-test-vpc"]
+  dns_name                           = "mock-priv-subdomain.mock-domain."
+  labels                             = local.labels
+  name                               = "mock-priv-subdomain-mock-domain"
+  private_visibility_config_networks = ["https://www.googleapis.com/compute/v1/projects/${var.project}/global/networks/mock-vpc"]
   project                            = var.project
   visibility                         = "private"
 }

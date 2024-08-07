@@ -1,6 +1,3 @@
-# Required Providers
-# https://developer.hashicorp.com/terraform/language/providers/requirements
-
 terraform {
   required_providers {
     google = {
@@ -12,7 +9,7 @@ terraform {
 module "test" {
   source = "../../.."
 
-  name    = "test-vpc"
+  name    = "mock-vpc"
   project = var.project
 
   # The following rules test each of the dynamic blocks in various combinations. This should
@@ -33,7 +30,7 @@ module "test" {
 
       direction = "INGRESS"
 
-      name = "test-01"
+      name = "mock-rule-01"
 
       ranges = [
         "130.211.0.0/22",
@@ -70,8 +67,5 @@ module "test" {
     }
   ]
 
-  # In order to test this we would need a new project created in the google-cloud-terraform-testing
-  # repository. The existing projects are already a shared VPC host or service projects.
-
-  shared_vpc = false
+  shared_vpc = true
 }
