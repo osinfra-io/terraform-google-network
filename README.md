@@ -67,12 +67,12 @@ terraform test
 
 > A child module automatically inherits default (un-aliased) provider configurations from its parent. The provider versions below are informational only and do **not** need to align with the provider configurations from its parent.
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- BEGIN_TF_DOCS -->
 ### Providers
 
 | Name | Version |
 |------|---------|
-| google | 5.40.0 |
+| google | 6.2.0 |
 
 ### Resources
 
@@ -98,6 +98,5 @@ terraform test
 | Name | Description |
 |------|-------------|
 | name | The network name |
-| project | The ID of the project in which the resource belongs |
 | self\_link | The URI of the created resource |
-<!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+<!-- END_TF_DOCS -->
