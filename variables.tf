@@ -1,3 +1,6 @@
+# Input Variables
+# https://www.terraform.io/language/values/variables
+
 variable "name" {
   description = "Name of the network to create"
   type        = string
